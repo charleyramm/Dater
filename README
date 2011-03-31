@@ -1,0 +1,30 @@
+REQUIREMENTS
+15/01/2011
+"Write a program to perform date arithmetic such as how many dats there are between 6/6/90 and 4/3/92. Include a specification and a code design."
+
+SPECIFICATION
+Dater: a program to calculate the number of days between two dates. Dater takes an input of two dates in the format dd/mm/yyyy dd/mm/yyyy and outputs the number of days between the two dates. 
+
+Usage:
+$ ./dater
+Input first date: 03/07/1987
+Input second date: 15/01/2011
+Result: 8395 days
+$
+
+CODE DESIGN
+Read date inputs
+While year1 < year2
+	difference += 365/366
+	year1++
+End-while
+While month1 < month2
+	difference += 31/30/28/29
+	month1++
+End-while
+While days1 < days2
+	difference += 1
+	days1++
+End-while
+Output result
+
