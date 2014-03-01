@@ -1,9 +1,26 @@
 /* 
+ * 
  * Dater: a program to calculate the number of days between two dates. 
  *
  * Author: Charley RAmm
  * Date: 15/01/2011
  *
+ *
+ * CODE DESIGN
+ * Read date inputs
+ * While year1 < year2
+ * 	difference += 365/366
+ * 	year1++
+ * End-while
+ * While month1 < month2
+ * 	difference += 31/30/28/29
+ * 	month1++
+ * End-while
+ * While days1 < days2
+ * 	difference += 1
+ * 	days1++
+ * End-while
+ * Output result
  *
  *
  */
